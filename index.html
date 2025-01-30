@@ -1,97 +1,65 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vero Technologie - Développement Web & Mobile">
-  <title>Vero Technologie</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- FontAwesome (Icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeroTechnologie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <h1>VeroTechnologie</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#testimonials">شهادات العملاء</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <a href="index.html" class="logo"><img src="images/logo.png" alt="Vero Technologie"></a>
-        <ul class="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Nos Réalisations</a></li>
-          <li><a href="#about">À Propos</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#estimation" class="cta">Estimez votre projet</a></li>
+    <section id="about">
+        <h2>من نحن</h2>
+        <p>نحن وكالة تطوير الويب التي تحول رؤيتك إلى نجاح.</p>
+    </section>
+
+    <section id="services">
+        <h2>خدماتنا</h2>
+        <ul>
+            <li>تحليل وتصميم</li>
+            <li>تطوير واختبار</li>
+            <li>إطلاق وتحسين</li>
         </ul>
-        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-      </div>
-    </nav>
-  </header>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Boostez votre visibilité avec <span>Vero Technologie</span></h1>
-      <p>Transformez votre vision en une solution digitale réussie.</p>
-      <a href="#contact" class="cta-button">Obtenez un devis</a>
-    </div>
-  </section>
+    <section id="testimonials">
+        <h2>شهادات العملاء</h2>
+        <blockquote>
+            <p>"لقد كان العمل مع VeroTechnologie تجربة رائعة!"</p>
+            <footer>- عميل راضي</footer>
+        </blockquote>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Nos Services</h2>
-      <div class="service-grid">
-        <div class="service-item">
-          <i class="fas fa-code"></i>
-          <h3>Développement Web</h3>
-          <p>Création de sites web modernes et performants.</p>
-        </div>
-        <div class="service-item">
-          <i class="fas fa-mobile-alt"></i>
-          <h3>Développement Mobile</h3>
-          <p>Applications Android et iOS sur mesure.</p>
-        </div>
-        <div class="service-item">
-          <i class="fas fa-paint-brush"></i>
-          <h3>UI/UX Design</h3>
-          <p>Design moderne et ergonomique.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <form>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contactez-nous</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Votre Nom" required>
-        <input type="email" name="email" placeholder="Votre Email" required>
-        <textarea name="message" placeholder="Votre Message" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
-  </section>
+    <footer>
+        <p>&copy; 2023 VeroTechnologie. جميع الحقوق محفوظة.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Vero Technologie. Tous droits réservés.</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
