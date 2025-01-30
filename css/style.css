@@ -29,20 +29,22 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-}
-
-.navbar .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 /* ======== Logo Styling ======== */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo img {
-  height: 80px;
-  width: auto;
-  max-width: 100%;
-  display: block;
+  height: 60px; /* تعديل الارتفاع ليكون أصغر */
+  width: auto; /* الحفاظ على التناسق */
+  max-width: 150px; /* منع الصورة من التمدد أكثر من اللازم */
+  object-fit: contain; /* الحفاظ على الجودة */
 }
 
 /* ======== Navigation Links ======== */
