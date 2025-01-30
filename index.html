@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,57 +7,96 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>VeroTechnologie</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#testimonials">شهادات العملاء</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>VeroTechnologie</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#testimonials">شهادات العملاء</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <section id="hero">
+        <div class="container">
+            <h2>تحويل رؤيتك إلى نجاح</h2>
+            <p>نحن وكالة تطوير الويب التي تحول أفكارك إلى واقع ملموس.</p>
+            <a href="#services" class="btn">اكتشف خدماتنا</a>
+        </div>
+    </section>
+
     <section id="about">
-        <h2>من نحن</h2>
-        <p>نحن وكالة تطوير الويب التي تحول رؤيتك إلى نجاح.</p>
+        <div class="container">
+            <h2>من نحن</h2>
+            <p>نحن فريق من المحترفين المتفانين في تقديم حلول ويب مبتكرة وفعالة.</p>
+        </div>
     </section>
 
     <section id="services">
-        <h2>خدماتنا</h2>
-        <ul>
-            <li>تحليل وتصميم</li>
-            <li>تطوير واختبار</li>
-            <li>إطلاق وتحسين</li>
-        </ul>
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>تحليل وتصميم</h3>
+                    <p>نقوم بتحليل احتياجاتك وتصميم حلول مخصصة.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-code"></i>
+                    <h3>تطوير واختبار</h3>
+                    <p>نطور تطبيقات ويب عالية الجودة ونجري اختبارات شاملة.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-rocket"></i>
+                    <h3>إطلاق وتحسين</h3>
+                    <p>نساعدك في إطلاق منتجك وتحسين أدائه باستمرار.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="testimonials">
-        <h2>شهادات العملاء</h2>
-        <blockquote>
-            <p>"لقد كان العمل مع VeroTechnologie تجربة رائعة!"</p>
-            <footer>- عميل راضي</footer>
-        </blockquote>
+        <div class="container">
+            <h2>شهادات العملاء</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"لقد كان العمل مع VeroTechnologie تجربة رائعة!"</p>
+                    <footer>- عميل راضي</footer>
+                </div>
+                <div class="testimonial">
+                    <p>"فريق محترف ومتفاني في تقديم أفضل الحلول."</p>
+                    <footer>- عميل آخر</footer>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>اتصل بنا</h2>
-        <form>
-            <label for="name">الاسم:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">البريد الإلكتروني:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">الرسالة:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">إرسال</button>
-        </form>
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <form>
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 VeroTechnologie. جميع الحقوق محفوظة.</p>
+        <div class="container">
+            <p>&copy; 2023 VeroTechnologie. جميع الحقوق محفوظة.</p>
+        </div>
     </footer>
 
     <script src="js/app.js"></script>
