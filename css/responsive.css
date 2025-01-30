@@ -5,14 +5,22 @@
 
     nav ul li {
         display: block;
-        margin: 0;
+        margin: 10px 0;
     }
 
-    section {
-        padding: 1rem;
+    #hero {
+        padding: 60px 0;
     }
 
-    form input, form textarea {
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    .services-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
         width: 100%;
     }
 }
