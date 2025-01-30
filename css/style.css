@@ -39,8 +39,10 @@ body {
 
 /* ======== Logo Styling ======== */
 .logo img {
-  height: 50px;
+  height: 80px;
   width: auto;
+  max-width: 100%;
+  display: block;
 }
 
 /* ======== Navigation Links ======== */
