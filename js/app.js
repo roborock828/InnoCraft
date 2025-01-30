@@ -1,23 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // إضافة تأثيرات للروابط
-    const links = document.querySelectorAll('nav ul li a');
-    links.forEach(link => {
-        link.addEventListener('mouseover', () => {
-            link.style.color = '#ff6f61';
-        });
-        link.addEventListener('mouseout', () => {
-            link.style.color = '#fff';
-        });
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-    // إضافة تأثيرات للأزرار
-    const buttons = document.querySelectorAll('.btn');
-    buttons.forEach(button => {
-        button.addEventListener('mouseover', () => {
-            button.style.transform = 'scale(1.1)';
-        });
-        button.addEventListener('mouseout', () => {
-            button.style.transform = 'scale(1)';
-        });
-    });
+  menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+
+  document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("Votre message a été envoyé !");
+    this.reset();
+  });
 });
