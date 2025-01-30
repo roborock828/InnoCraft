@@ -1,82 +1,74 @@
-/* ======== Reset Defaults ======== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-/* ======== Navigation Bar ======== */
-.navbar {
-  background: #fff;
-  padding: 15px 50px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header h1 {
+    margin: 0;
 }
 
-.logo img {
-  height: 60px;
-  width: auto;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-.nav-links li {
-  margin-left: 20px;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.nav-links a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background: #fff;
 }
 
-.nav-links a:hover {
-  color: #6a0dad;
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
-/* ======== Hero Section ======== */
-.hero {
-  background: url('../images/hero-image.jpg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.hero h1 {
-  font-size: 3rem;
+form label {
+    margin-bottom: 0.5rem;
 }
 
-.cta-button {
-  background: #6a0dad;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+form button {
+    padding: 0.5rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
 }
