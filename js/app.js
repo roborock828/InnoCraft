@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // إنشاء زر القائمة المتنقلة (☰) للأجهزة الصغيرة
-  const menuToggle = document.createElement("div");
-  menuToggle.classList.add("menu-toggle");
-  menuToggle.innerHTML = "☰";
-  document.querySelector(".navbar .container").prepend(menuToggle);
-
+  
+  /* ======== Menu Toggle (Mobile) ======== */
+  const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
-  // تشغيل وإيقاف القائمة عند النقر
   menuToggle.addEventListener("click", function () {
     navLinks.classList.toggle("active");
   });
 
-  // تفعيل التمرير السلس عند النقر على الروابط في القائمة
+  // إغلاق القائمة بعد النقر على أي رابط (في الجوال)
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", function () {
+      navLinks.classList.remove("active");
+    });
+  });
+
+  /* ======== Smooth Scrolling Effect ======== */
   document.querySelectorAll('.nav-links a').forEach(anchor => {
     anchor.addEventListener("click", function (event) {
       event.preventDefault();
@@ -23,24 +26,23 @@ document.addEventListener("DOMContentLoaded", function () {
         top: targetElement.offsetTop - 60,
         behavior: "smooth",
       });
-
-      // إغلاق القائمة في الأجهزة الصغيرة بعد النقر على الرابط
-      navLinks.classList.remove("active");
     });
   });
 
-  // معالجة إرسال نموذج التواصل
-  document.getElementById("contact-form").addEventListener("submit", function (event) {
+  /* ======== Contact Form Submission Effect ======== */
+  const contactForm = document.getElementById("contact-form");
+
+  contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // استخراج القيم من النموذج
+    // استخراج بيانات النموذج
     const name = event.target.name.value;
     const email = event.target.email.value;
     const message = event.target.message.value;
 
     // عرض رسالة نجاح بعد الإرسال
     const successMessage = document.createElement("p");
-    successMessage.textContent = "Your message has been sent successfully!";
+    successMessage.textContent = "Votre message a été envoyé avec succès !";
     successMessage.style.color = "green";
     successMessage.style.marginTop = "10px";
 
@@ -51,9 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     successMessage.id = "form-message";
-    event.target.appendChild(successMessage);
+    contactForm.appendChild(successMessage);
 
     // إعادة تعيين النموذج بعد الإرسال
-    event.target.reset();
+    contactForm.reset();
   });
+
 });
