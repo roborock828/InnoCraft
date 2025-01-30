@@ -1,4 +1,4 @@
-/* ======== Reset Browser Defaults ======== */
+/* ======== Reset Default Styles ======== */
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +8,15 @@
 body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
-  line-height: 1.6;
   background-color: #f9f9f9;
+  line-height: 1.6;
 }
 
 /* ======== Container ======== */
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* ======== Navigation Bar ======== */
@@ -36,11 +36,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+/* ======== Logo Styling ======== */
 .logo img {
   height: 50px;
   width: auto;
 }
 
+/* ======== Navigation Links ======== */
 .nav-links {
   list-style: none;
   display: flex;
@@ -78,11 +81,9 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
     background: white;
-    padding: 10px 0;
+    width: 100%;
+    padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
@@ -98,7 +99,8 @@ body {
 
 /* ======== Hero Section ======== */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('../images/hero-image.jpg') no-repeat center center/cover;
   color: #fff;
   height: 100vh;
   display: flex;
@@ -162,16 +164,10 @@ body {
   margin-bottom: 1rem;
 }
 
-/* ======== About Section ======== */
-.about {
-  padding: 4rem 0;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.about p {
-  max-width: 800px;
-  margin: 0 auto;
+.service-item i {
+  font-size: 2.5rem;
+  color: #6a0dad;
+  margin-bottom: 10px;
 }
 
 /* ======== Contact Section ======== */
