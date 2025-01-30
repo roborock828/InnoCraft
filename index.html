@@ -1,104 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VeroTechnologie</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vero Technologie - Développement Web & Mobile">
+  <title>Vero Technologie</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome (Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>VeroTechnologie</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#testimonials">Témoignages</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="hero">
-        <div class="container">
-            <h2>Transformez votre vision en succès</h2>
-            <p>Nous sommes une agence de développement web et mobile qui donne vie à vos idées.</p>
-            <a href="#services" class="btn">Découvrez nos services</a>
-        </div>
-    </section>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Vero Technologie"></a>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#applications">Nos Applications</a></li>
+          <li><a href="#realisations">Nos Réalisations</a></li>
+          <li><a href="#methode">Méthode de Travail</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#estimation" class="cta">Estimez votre projet</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+  </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>À propos de nous</h2>
-            <p>Nous sommes une équipe de professionnels dédiés à fournir des solutions web innovantes et efficaces.</p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Boostez votre visibilité avec <span>Vero Technologie</span></h1>
+      <p>Transformez votre vision en une solution digitale réussie.</p>
+      <a href="#contact" class="cta-button">Obtenez un devis</a>
+    </div>
+  </section>
 
-    <section id="services">
-        <div class="container">
-            <h2>Nos services</h2>
-            <div class="services-grid">
-                <div class="service">
-                    <i class="fas fa-pencil-ruler"></i>
-                    <h3>Analyse & Conception</h3>
-                    <p>Nous analysons vos besoins et concevons des solutions sur mesure.</p>
-                </div>
-                <div class="service">
-                    <i class="fas fa-code"></i>
-                    <h3>Développement & Test</h3>
-                    <p>Nous développons des applications web de haute qualité et effectuons des tests complets.</p>
-                </div>
-                <div class="service">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Lancement & Optimisation</h3>
-                    <p>Nous vous aidons à lancer votre produit et à optimiser ses performances.</p>
-                </div>
-            </div>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Nos Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <i class="fas fa-code"></i>
+          <h3>Développement Web</h3>
+          <p>Création de sites web modernes et performants.</p>
         </div>
-    </section>
-
-    <section id="testimonials">
-        <div class="container">
-            <h2>Témoignages</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <p>"Travailler avec VeroTechnologie a été une expérience incroyable !"</p>
-                    <footer>- Client satisfait</footer>
-                </div>
-                <div class="testimonial">
-                    <p>"Une équipe professionnelle et dévouée à fournir les meilleures solutions."</p>
-                    <footer>- Un autre client</footer>
-                </div>
-            </div>
+        <div class="service-item">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Développement Mobile</h3>
+          <p>Applications Android et iOS sur mesure.</p>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contactez-nous</h2>
-            <form>
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
+        <div class="service-item">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Design moderne et ergonomique.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 VeroTechnologie. Tous droits réservés.</p>
-        </div>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Votre Nom" required>
+        <input type="email" name="email" placeholder="Votre Email" required>
+        <textarea name="message" placeholder="Votre Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
 
-    <script src="js/app.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Vero Technologie. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/app.js"></script>
 </body>
 </html>
