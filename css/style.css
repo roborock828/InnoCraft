@@ -21,7 +21,7 @@ body {
 /* ======== Navigation Bar ======== */
 .navbar {
   background: #fff;
-  padding: 15px 0;
+  padding: 15px 50px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -31,7 +31,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
 }
 
 .nav-links {
@@ -54,14 +58,9 @@ body {
   color: #6a0dad;
 }
 
-.logo img {
-  height: 60px;
-  width: auto;
-}
-
 /* ======== Hero Section ======== */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-image.jpg') no-repeat center center/cover;
+  background: url('../images/hero-image.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
